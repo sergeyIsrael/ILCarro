@@ -6,15 +6,13 @@ import org.testng.annotations.Test;
 
 public class LoginTests extends TestBase {
 
-
-@BeforeMethod
-public void precondition(){
-if (app.getUser().isLoggedIn()){
+    @BeforeMethod
+    public void precondition(){
+    if (app.getUser().isLoggedIn())
     app.getUser().logout();
-}
-}
+    }
 
-@Test
+    @Test
     public void loginPositive(){
     app.getUser().openLoginForm();
     app.getUser().fillLoginForm(
@@ -23,7 +21,19 @@ if (app.getUser().isLoggedIn()){
     Assert.assertTrue(app.getUser().isLoggedSuccess());
 }
 
-@Test
+    @Test
+    public void loginPositiveUser(){
+        User user = new User()
+                .withEmail("asd@fgh.com")
+                .withPassword("$Asdf1234");
+        app.getUser().openLoginForm();
+        app.getUser().fillLoginForm(user.getEmail(), user.getPassword());
+        app.getUser().submitLogin();
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
+    }
+
+
+    @Test
     public void loginPositiveUserData(){
 
     User user = new User();
@@ -32,9 +42,9 @@ if (app.getUser().isLoggedIn()){
     app.getUser().openLoginForm();
     app.getUser().fillLoginForm(user);
     app.getUser().submitLogin();
-}
+    }
 
-@AfterMethod
+    @AfterMethod
     public void postCondition(){
     app.getUser().clickOkButton();
 }

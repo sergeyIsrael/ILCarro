@@ -1,14 +1,21 @@
+import manager.TestNgListener;
 import models.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-public class RegistrationTests extends TestBase{
+@Listeners(TestNgListener.class)
+
+
+public class RegistrationTests extends TestBase {
+
     @BeforeMethod
     public void precondition(){
         if(app.getUser().isLoggedIn()) app.getUser().logout();
     }
+
 
     @Test
     public void registrationPositive(){
@@ -22,9 +29,12 @@ public class RegistrationTests extends TestBase{
         app.getUser().openRegistrationForm();
         app.getUser().fillRegistrationForm(user);
         app.getUser().submitLogin();
+        logger.info("registrationPositive starts with credentials: login: "
+                + user.getEmail() + " & password: " + user.getPassword() );
         Assert.assertTrue(app.getUser().isLoggedSuccess());
 
     }
+
 
     @AfterMethod
     public void postcondition(){

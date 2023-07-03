@@ -2,7 +2,9 @@ package manager;
 
 import models.User;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class HelperUser extends HelperBase {
 
@@ -18,10 +20,37 @@ public class HelperUser extends HelperBase {
         type(By.xpath("//input[@id='email']"), email);
         type(By.xpath("//input[@id='password']"), password);
     }
-// overloading
+    // overloading
     public void fillLoginForm(User user){
         type(By.xpath("//input[@id='email']"), user.getEmail());
         type(By.xpath("//input[@id='password']"), user.getPassword());
+    }
+
+    public void openRegistrationForm(){
+        wd.findElement(By.xpath("//*[.=' Sign up ']")).click();
+    }
+
+    public void fillRegistrationForm(User user){
+        type(By.xpath("//input[@id='name']"), user.getName());
+        type(By.xpath("//input[@id='lastName']"), user.getLastName());
+        type(By.xpath("//input[@id='email']"), user.getEmail());
+        type(By.xpath("//input[@id='password']"), user.getPassword());
+        click(By.cssSelector("label[for='terms-of-use']"));
+    }
+
+    public void clickCheckbox(){
+        System.out.println("clicked Checkbox");
+        // variant 1
+//            click(By.cssSelector("label[for='terms-of-use']"));
+        // variant 2
+//            JavascriptExecutor js = (JavascriptExecutor) wd;
+//            js.executeScript("document.querySelector('#terms-of-use').click();");
+        // variant 3
+        Rectangle rect = wd.findElement(By.cssSelector("div.checkbox-container")).getRect();
+        int x = rect.getX() + 50;
+        int y = rect.getY() + rect.getHeight() / 4;
+        Actions actions = new Actions(wd);
+        actions.moveByOffset(x, y).click().perform();
     }
 
     public void submitLogin(){
@@ -33,39 +62,30 @@ public class HelperUser extends HelperBase {
     }
 
     public void logout(){
-click(By.xpath("//a[.=' Logout ']"));
+        click(By.xpath("//a[.=' Logout ']"));
     }
 
     public boolean isLoggedIn(){
-return isElementPresent(By.xpath("//a[.=' Logout ']"));
+        return isElementPresent(By.xpath("//a[.=' Logout ']"));
     }
 
     public void clickOkButton(){
         click(By.xpath("//button[@type='button']"));
-}
+    }
 
-public boolean isLoggedSuccess(){
+    public boolean isLoggedSuccess(){
         return isElementPresent(By.xpath("//h2[contains(text(),'success')]"));
-}
 
-public void login(User user){
+    }
+
+    public void login(User user){
         openLoginForm();
         fillLoginForm(user);
         submitLogin();
         clickOkButton();
-}
-
-public void openRegistrationForm(){
-        wd.findElement(By.xpath("//*[.=' Sign up ']")).click();
     }
 
-    public void fillRegistrationForm(User user){
-        type(By.xpath("//input[@id='name']"), user.getName());
-        type(By.xpath("//input[@id='lastName']"), user.getLastName());
-        type(By.xpath("//input[@id='email']"), user.getEmail());
-        type(By.xpath("//input[@id='password']"), user.getPassword());
-        click(By.cssSelector("label[for='terms-of-use']"));
-    }
+
 
 
 
