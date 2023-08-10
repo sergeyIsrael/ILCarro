@@ -57,12 +57,8 @@ public class HelperCar extends HelperBase {
     }
 
     public void clickSerialNumber(String text){
-//        Rectangle element = wd.findElement(By.id("serialNumber")).getRect();
         WebElement element = wd.findElement(By.id("serialNumber"));
-//        int x = element.getX() + rect.getWidth() * 7 / 8;
-//        int y = element.getY() + rect.getHeight() / 2;
         Actions actions = new Actions(wd);
-//        actions.moveByOffset(x, y).click().perform();
         actions.moveToElement(element).click().perform();
         element.clear();
         element.sendKeys(text);

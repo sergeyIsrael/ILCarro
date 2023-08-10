@@ -2,6 +2,8 @@ package manager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,9 +15,18 @@ public class ApplicationManager {
 
     Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
-WebDriver wd;
-HelperUser user;
-HelperCar car;
+// WebDriver wd;
+    EventFiringWebDriver wd;
+    HelperUser user;
+    HelperCar car;
+    HelperSearch search;
+
+    String browser;
+    // этот конструктор запустится в TestBase
+    public ApplicationManager(String browser) {
+        this.browser = browser;
+    }
+
 
     public HelperUser getUser() {
         return user;
@@ -25,13 +36,28 @@ HelperCar car;
         return car;
     }
 
-    @BeforeSuite
+    public HelperSearch getSearch() {
+        return search;
+    }
+
+//    @BeforeSuite
     public void init(){
-//        wd = new ChromeDriver();
-        wd = new EventFiringWebDriver(new ChromeDriver());
+
+        // wd = new ChromeDriver();
+// в BrowserType.CHROME вшита команда "chrome" для вызова из terminal
+        if( browser.equals(BrowserType.CHROME) ){
+            wd = new EventFiringWebDriver(new ChromeDriver());
+            logger.info("Tests start on Chrome");
+// в BrowserType.FIREFOX вшита команда "firefox" для вызова из terminal
+        } else if( browser.equals(BrowserType.FIREFOX) ) {
+            wd = new EventFiringWebDriver(new FirefoxDriver());
+            logger.info("Tests start on Firefox");
+        }
+
         wd.register(new WebDriverListener());
         user = new HelperUser(wd);
         car = new HelperCar(wd);
+        search = new HelperSearch(wd);
         wd.manage().window().maximize();
         wd.navigate().to("https://ilcarro.web.app/search");
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -39,7 +65,7 @@ HelperCar car;
 
     @AfterSuite
     public void tearDown(){
-        wd.quit();
+//        wd.quit();
     }
 
 

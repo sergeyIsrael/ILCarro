@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class RegistrationTests extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void precondition(){
         if(app.getUser().isLoggedIn()) app.getUser().logout();
     }
@@ -36,7 +36,7 @@ public class RegistrationTests extends TestBase {
     }
 
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void postcondition(){
         app.getUser().clickOkButton();
     }

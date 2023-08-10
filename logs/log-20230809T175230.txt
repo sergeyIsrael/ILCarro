@@ -1,0 +1,35 @@
+17:52:35 INFO  manager.ApplicationManager - Tests start on Chrome
+17:52:40 INFO  TestBase - Method searchPositiveTest is started
+17:52:40 INFO  manager.TestNgListener - Test starts searchPositiveTest invoked
+17:52:40 INFO  manager.WebDriverListener - Start searching element ---> By.id: city
+17:52:40 INFO  manager.WebDriverListener - Element with locator ---> By.id: city is found
+17:52:42 INFO  manager.WebDriverListener - Start searching element ---> By.cssSelector: div.pac-item
+17:52:45 INFO  manager.WebDriverListener - Element with locator ---> By.cssSelector: div.pac-item is found
+17:52:46 INFO  manager.WebDriverListener - Start searching element ---> By.id: dates
+17:52:46 INFO  manager.WebDriverListener - Element with locator ---> By.id: dates is found
+17:52:49 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@aria-label='Next month']
+17:52:50 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@aria-label='Next month'] is found
+17:52:52 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@aria-label='Next month']
+17:52:52 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@aria-label='Next month'] is found
+17:52:54 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@aria-label='Next month']
+17:52:54 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@aria-label='Next month'] is found
+17:52:55 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@aria-label='Next month']
+17:52:55 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@aria-label='Next month'] is found
+17:52:56 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //div[.=' 10 ']
+17:52:56 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //div[.=' 10 '] is found
+17:52:56 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@aria-label='Next month']
+17:52:56 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@aria-label='Next month'] is found
+17:52:58 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@aria-label='Next month']
+17:52:58 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@aria-label='Next month'] is found
+17:52:59 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@aria-label='Next month']
+17:52:59 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@aria-label='Next month'] is found
+17:53:00 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@aria-label='Next month']
+17:53:00 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@aria-label='Next month'] is found
+17:53:01 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@aria-label='Next month']
+17:53:01 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@aria-label='Next month'] is found
+17:53:03 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //div[.=' 12 ']
+17:53:03 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //div[.=' 12 '] is found
+17:53:03 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@type='submit']
+17:53:03 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@type='submit'] is found
+17:53:06 INFO  manager.TestNgListener - Test searchPositiveTest successful
+17:53:06 INFO  TestBase - ================================

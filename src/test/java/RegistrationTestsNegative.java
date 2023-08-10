@@ -12,12 +12,12 @@ import org.testng.annotations.Test;
 
 public class RegistrationTestsNegative extends TestBase{
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void precondition(){
         if(app.getUser().isLoggedIn()) app.getUser().logout();
     }
 
-    @Test
+    @Test(groups = {"negative"})
     public void registrationNegativeWrongEmail(){
         User user = new User()
                 .withName("Sergei")
@@ -30,7 +30,7 @@ public class RegistrationTestsNegative extends TestBase{
     }
 
 
-    @Test
+    @Test(groups = {"negative"})
     public void registrationNegativeWrongPassword(){
         User user = new User()
                 .withName("Sergei")
@@ -45,8 +45,9 @@ public class RegistrationTestsNegative extends TestBase{
     }
 
 
-    @Test
+    @Test(groups = {"negative"})
     public void registrationNegativeNameIsEmpty(){
+//        Always FAIL! (site has a BUG at this field 😄)
         User user = new User()
                 .withName("")
                 .withLastName("Orlov")
@@ -60,7 +61,7 @@ public class RegistrationTestsNegative extends TestBase{
     }
 
 
-    @Test
+    @Test(groups = {"negative"})
     public void registrationNegativeLastNameIsEmpty(){
         User user = new User()
                 .withName("Sergei")

@@ -27,3 +27,32 @@ dependencies {
 test {
     useTestNG()
 }
+
+task mytest(type: Test) {
+    useTestNG() {
+        def groups = System.getProperty('groups')
+        if(groups != null){
+            includeGroups groups
+        }
+// def - default
+        def suite = System.getProperty("suite", "")
+// Copy Path/Reference > path from repository root
+        if (suite == "addcar") {
+            suites "src/test/resources/addcar.xml"
+        } else if (suite == "RegTestPositive") {
+            suites "src/test/resources/RegTestPositive.xml"
+        } else if (suite == "RegTestNeg") {
+            suites "src/test/resources/RegTestNeg.xml"
+        } else if (suite == "login") {
+            suites "src/test/resources/login.xml"
+        } else if (suite.equals("negative")) {
+            suites "src/test/resources/negativeGroupSuite.xml"
+        } else {
+            suites 'src/test/resources/testng.xml'
+        }
+    }
+    if(project.hasProperty('browser')){
+        systemProperty 'browser', "${browser}"
+    }
+
+}
