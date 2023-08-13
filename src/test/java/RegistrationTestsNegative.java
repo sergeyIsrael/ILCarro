@@ -55,7 +55,7 @@ public class RegistrationTestsNegative extends TestBase{
                 .withPassword("123456@Aa");
 
         app.getUser().openRegistrationForm();
-        app.getUser().fillRegistrationForm(user);
+        app.getUser().fillRegistrationForm_ClickNameField(user);
         Assert.assertTrue(app.getUser().isElementPresent
                 (By.xpath("//*[text()=' Name is required ']" )));
     }

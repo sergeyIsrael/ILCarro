@@ -10,8 +10,8 @@
     <test name="negative_tests">
         <classes>
             <class name="RegistrationTestsNegative"/>
-<!--            <class name="tests.RegistrationTests"/>-->
-<!--            <class name="tests.AddNewContactTests"/>-->
+            <class name="RegistrationTests"/>
+            <class name="AddNewCar"/>
         </classes>
     </test>
 </suite>
