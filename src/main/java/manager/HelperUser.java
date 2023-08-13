@@ -41,16 +41,6 @@ public class HelperUser extends HelperBase {
         clickCheckbox();
     }
 
-    public void fillRegistrationForm_ClickNameField(User user){
-        click(By.xpath("//input[@id='name']"));
-        type(By.xpath("//input[@id='name']"), user.getName());
-        type(By.xpath("//input[@id='lastName']"), user.getLastName());
-        type(By.xpath("//input[@id='email']"), user.getEmail());
-        type(By.xpath("//input[@id='password']"), user.getPassword());
-//        click(By.cssSelector("label[for='terms-of-use']"));
-        clickCheckbox();
-    }
-
     public void clickCheckbox(){
         System.out.println("clicked Checkbox");
         // variant 1

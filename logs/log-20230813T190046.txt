@@ -1,0 +1,89 @@
+19:00:54 INFO  manager.ApplicationManager - Tests start on Chrome
+19:00:59 INFO  TestBase - Method registrationNegativeLastNameIsEmpty is started
+19:00:59 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //a[.=' Logout ']
+19:01:04 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //a[.=' Logout '] is found
+19:01:04 INFO  manager.TestNgListener - Test starts registrationNegativeLastNameIsEmpty invoked
+19:01:04 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[.=' Sign up ']
+19:01:04 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[.=' Sign up '] is found
+19:01:05 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+19:01:06 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+19:01:07 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='lastName']
+19:01:08 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='lastName'] is found
+19:01:08 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='email']
+19:01:08 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='email'] is found
+19:01:08 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='password']
+19:01:08 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='password'] is found
+19:01:10 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[text()=' Last name is required ']
+19:01:10 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[text()=' Last name is required '] is found
+19:01:10 INFO  manager.TestNgListener - Test registrationNegativeLastNameIsEmpty successful
+19:01:10 INFO  TestBase - ================================
+19:01:10 INFO  TestBase - Method registrationNegativeNameIsEmpty is started
+19:01:10 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //a[.=' Logout ']
+19:01:15 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //a[.=' Logout '] is found
+19:01:15 INFO  manager.TestNgListener - Test starts registrationNegativeNameIsEmpty invoked
+19:01:15 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[.=' Sign up ']
+19:01:15 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[.=' Sign up '] is found
+19:01:16 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+19:01:16 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+19:01:17 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+19:01:17 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+19:01:17 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='lastName']
+19:01:17 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='lastName'] is found
+19:01:17 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='email']
+19:01:17 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='email'] is found
+19:01:18 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='password']
+19:01:18 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='password'] is found
+19:01:18 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[text()=' Name is required ']
+19:01:23 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[text()=' Name is required '] is found
+19:01:23 INFO  manager.TestNgListener - Test registrationNegativeNameIsEmpty failed java.lang.AssertionError: expected [true] but found [false]
+19:01:23 INFO  TestBase - ================================
+19:01:23 INFO  TestBase - Method registrationNegativeWrongEmail is started
+19:01:23 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //a[.=' Logout ']
+19:01:28 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //a[.=' Logout '] is found
+19:01:28 INFO  manager.TestNgListener - Test starts registrationNegativeWrongEmail invoked
+19:01:28 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[.=' Sign up ']
+19:01:28 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[.=' Sign up '] is found
+19:01:29 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+19:01:29 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+19:01:30 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='lastName']
+19:01:30 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='lastName'] is found
+19:01:30 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='email']
+19:01:30 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='email'] is found
+19:01:30 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='password']
+19:01:30 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='password'] is found
+19:01:30 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[text()='Wrong email format']
+19:01:30 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[text()='Wrong email format'] is found
+19:01:30 INFO  manager.TestNgListener - Test registrationNegativeWrongEmail successful
+19:01:30 INFO  TestBase - ================================
+19:01:30 INFO  TestBase - Method registrationNegativeWrongPassword is started
+19:01:30 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //a[.=' Logout ']
+19:01:35 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //a[.=' Logout '] is found
+19:01:35 INFO  manager.TestNgListener - Test starts registrationNegativeWrongPassword invoked
+19:01:35 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[.=' Sign up ']
+19:01:35 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[.=' Sign up '] is found
+19:01:36 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+19:01:36 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+19:01:36 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='lastName']
+19:01:36 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='lastName'] is found
+19:01:36 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='email']
+19:01:36 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='email'] is found
+19:01:36 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='password']
+19:01:36 INFO  manager.WebDriverListener -  - - - Something went wrong! - - - 
+19:01:36 INFO  manager.WebDriverListener - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=115.0.5790.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-mac.lan', ip: '2a0d:6fc2:4040:2000:3547:613c:61d6:147e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.114, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: /var/folders/sf/ndkwk__53ln...}, goog:chromeOptions: {debuggerAddress: localhost:58360}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cd732ccdacffc899cfa6edf75fd838f
+*** Element info: {Using=xpath, value=//input[@id='password']}
+19:01:36 INFO  manager.TestNgListener - Test registrationNegativeWrongPassword failed org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=115.0.5790.114)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Pro-mac.lan', ip: '2a0d:6fc2:4040:2000:3547:613c:61d6:147e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.114, chrome: {chromedriverVersion: 115.0.5790.170 (cc0d30c2ca5..., userDataDir: /var/folders/sf/ndkwk__53ln...}, goog:chromeOptions: {debuggerAddress: localhost:58360}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2cd732ccdacffc899cfa6edf75fd838f
+19:01:36 INFO  TestBase - ================================
