@@ -1,3 +1,4 @@
+import manager.ProviderData;
 import manager.TestNgListener;
 import models.User;
 import org.testng.Assert;
@@ -26,6 +27,17 @@ public class RegistrationTests extends TestBase {
                 .withEmail("john_" + i + "@mail.com")
                 .withPassword("$Asdf1234");
 
+        app.getUser().openRegistrationForm();
+        app.getUser().fillRegistrationForm(user);
+        app.getUser().submitLogin();
+        logger.info("registrationPositive starts with credentials: login: "
+                + user.getEmail() + " & password: " + user.getPassword() );
+        Assert.assertTrue(app.getUser().isLoggedSuccess());
+
+    }
+
+    @Test (dataProvider = "userDtoSCV", dataProviderClass = ProviderData.class)
+    public void registrationPositiveDTO(User user){
         app.getUser().openRegistrationForm();
         app.getUser().fillRegistrationForm(user);
         app.getUser().submitLogin();

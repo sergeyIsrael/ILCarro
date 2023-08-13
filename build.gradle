@@ -28,6 +28,7 @@ test {
     useTestNG()
 }
 
+
 task mytest(type: Test) {
     useTestNG() {
         def groups = System.getProperty('groups')
@@ -53,6 +54,10 @@ task mytest(type: Test) {
     }
     if(project.hasProperty('browser')){
         systemProperty 'browser', "${browser}"
+    }
+//    for files with .properties
+    if(project.hasProperty('target')){
+        systemProperty 'target', "${target}"
     }
 
 }

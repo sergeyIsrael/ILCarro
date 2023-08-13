@@ -6,7 +6,7 @@
             <class name="LoginTests" />
             <class name="AddNewCar" />
             <class name="RegistrationTests" />
-<!--            <class name="RegistrationTestsNegative" />-->
+            <class name="RegistrationTestsNegative" />
             <class name="SearchTests" />
         </classes>
     </test>

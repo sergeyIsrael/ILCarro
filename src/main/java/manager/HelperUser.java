@@ -18,8 +18,11 @@ public class HelperUser extends HelperBase {
     }
 
     public void fillLoginForm(String email, String password){
+        pause(1000);
         type(By.xpath("//input[@id='email']"), email);
+        pause(1000);
         type(By.xpath("//input[@id='password']"), password);
+        pause(1000);
     }
     // overloading
     public void fillLoginForm(User user){

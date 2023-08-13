@@ -1,0 +1,19 @@
+20:18:53 INFO  manager.ApplicationManager - Tests start on Chrome
+20:18:58 INFO  TestBase - Method loginPositiveProps is started
+20:18:58 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //a[.=' Logout ']
+20:19:03 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //a[.=' Logout '] is found
+20:19:03 INFO  manager.TestNgListener - Test starts loginPositiveProps invoked
+20:19:03 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[.=' Log in ']
+20:19:03 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[.=' Log in '] is found
+20:19:05 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='email']
+20:19:05 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='email'] is found
+20:19:06 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='password']
+20:19:06 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='password'] is found
+20:19:08 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@type='submit']
+20:19:08 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@type='submit'] is found
+20:19:09 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //h2[contains(text(),'success')]
+20:19:10 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //h2[contains(text(),'success')] is found
+20:19:10 INFO  manager.TestNgListener - Test loginPositiveProps successful
+20:19:10 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //button[@type='button']
+20:19:10 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //button[@type='button'] is found
+20:19:10 INFO  TestBase - ================================
