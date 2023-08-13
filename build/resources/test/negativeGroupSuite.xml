@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!--   < < < GROUPS > > >    -->
+<suite name="ProductionNegative" verbose="1" >
+    <groups>
+        <run>
+            <include name="negative"/>
+        </run>
+    </groups>
+    <test name="negative_tests">
+        <classes>
+            <class name="RegistrationTestsNegative"/>
+            <class name="RegistrationTests"/>
+            <class name="AddNewCar"/>
+        </classes>
+    </test>
+</suite>

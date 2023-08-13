@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RegistrationTestsNegative" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-08-13T15:57:20" hostname="MacBook-Pro-mac.lan" time="5.424">
+  <properties/>
+  <testcase name="registrationNegativeNameIsEmpty" classname="RegistrationTestsNegative" time="5.424"/>
+  <system-out><![CDATA[clicked Checkbox
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
