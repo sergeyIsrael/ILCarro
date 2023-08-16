@@ -1,0 +1,75 @@
+18:51:10 INFO  manager.ApplicationManager - Tests start on Chrome
+18:51:15 INFO  TestBase - Method registrationNegativeLastNameIsEmpty is started
+18:51:15 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //a[.=' Logout ']
+18:51:20 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //a[.=' Logout '] is found
+18:51:20 INFO  manager.TestNgListener - Test starts registrationNegativeLastNameIsEmpty invoked
+18:51:20 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[.=' Sign up ']
+18:51:20 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[.=' Sign up '] is found
+18:51:22 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+18:51:23 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+18:51:24 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='lastName']
+18:51:24 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='lastName'] is found
+18:51:24 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='email']
+18:51:24 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='email'] is found
+18:51:25 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='password']
+18:51:25 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='password'] is found
+18:51:27 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[text()=' Last name is required ']
+18:51:27 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[text()=' Last name is required '] is found
+18:51:27 INFO  manager.TestNgListener - Test registrationNegativeLastNameIsEmpty successful
+18:51:27 INFO  TestBase - ================================
+18:51:27 INFO  TestBase - Method registrationNegativeNameIsEmpty is started
+18:51:27 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //a[.=' Logout ']
+18:51:33 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //a[.=' Logout '] is found
+18:51:33 INFO  manager.TestNgListener - Test starts registrationNegativeNameIsEmpty invoked
+18:51:33 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[.=' Sign up ']
+18:51:33 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[.=' Sign up '] is found
+18:51:33 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+18:51:33 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+18:51:33 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+18:51:33 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+18:51:33 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='lastName']
+18:51:33 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='lastName'] is found
+18:51:34 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='email']
+18:51:34 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='email'] is found
+18:51:34 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='password']
+18:51:34 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='password'] is found
+18:51:35 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[text()=' Name is required ']
+18:51:40 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[text()=' Name is required '] is found
+18:51:40 INFO  manager.TestNgListener - Test registrationNegativeNameIsEmpty failed java.lang.AssertionError: expected [true] but found [false]
+18:51:40 INFO  TestBase - ================================
+18:51:40 INFO  TestBase - Method registrationNegativeWrongEmail is started
+18:51:40 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //a[.=' Logout ']
+18:51:45 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //a[.=' Logout '] is found
+18:51:45 INFO  manager.TestNgListener - Test starts registrationNegativeWrongEmail invoked
+18:51:45 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[.=' Sign up ']
+18:51:45 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[.=' Sign up '] is found
+18:51:46 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+18:51:46 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+18:51:46 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='lastName']
+18:51:46 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='lastName'] is found
+18:51:46 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='email']
+18:51:46 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='email'] is found
+18:51:47 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='password']
+18:51:47 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='password'] is found
+18:51:47 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[text()='Wrong email format']
+18:51:47 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[text()='Wrong email format'] is found
+18:51:47 INFO  manager.TestNgListener - Test registrationNegativeWrongEmail successful
+18:51:47 INFO  TestBase - ================================
+18:51:47 INFO  TestBase - Method registrationNegativeWrongPassword is started
+18:51:47 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //a[.=' Logout ']
+18:51:52 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //a[.=' Logout '] is found
+18:51:52 INFO  manager.TestNgListener - Test starts registrationNegativeWrongPassword invoked
+18:51:52 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[.=' Sign up ']
+18:51:52 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[.=' Sign up '] is found
+18:51:52 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+18:51:52 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+18:51:52 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='lastName']
+18:51:52 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='lastName'] is found
+18:51:52 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='email']
+18:51:52 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='email'] is found
+18:51:53 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='password']
+18:51:53 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='password'] is found
+18:51:53 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //div[contains (text(), 'Password must contain 1')]
+18:51:53 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //div[contains (text(), 'Password must contain 1')] is found
+18:51:53 INFO  manager.TestNgListener - Test registrationNegativeWrongPassword successful
+18:51:53 INFO  TestBase - ================================

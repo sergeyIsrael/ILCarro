@@ -1,0 +1,21 @@
+18:54:28 INFO  manager.ApplicationManager - Tests start on Chrome
+18:54:32 INFO  TestBase - Method registrationNegativeNameIsEmpty is started
+18:54:32 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //a[.=' Logout ']
+18:54:37 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //a[.=' Logout '] is found
+18:54:37 INFO  manager.TestNgListener - Test starts registrationNegativeNameIsEmpty invoked
+18:54:37 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[.=' Sign up ']
+18:54:37 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[.=' Sign up '] is found
+18:54:40 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+18:54:40 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+18:54:41 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='name']
+18:54:41 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='name'] is found
+18:54:41 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='lastName']
+18:54:41 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='lastName'] is found
+18:54:42 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='email']
+18:54:42 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='email'] is found
+18:54:43 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //input[@id='password']
+18:54:43 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //input[@id='password'] is found
+18:54:43 INFO  manager.WebDriverListener - Start searching element ---> By.xpath: //*[text()=' Name is required ']
+18:54:43 INFO  manager.WebDriverListener - Element with locator ---> By.xpath: //*[text()=' Name is required '] is found
+18:54:43 INFO  manager.TestNgListener - Test registrationNegativeNameIsEmpty successful
+18:54:43 INFO  TestBase - ================================
